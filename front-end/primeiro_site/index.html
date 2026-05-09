@@ -58,11 +58,31 @@
 
             <p>Tem projeto em mente?</p>
 
-            <address>
-                Email: <a href="mailto:luan@luan.com">email luan</a>
-                <!-- <a> para redirecionamento href para referencia-->
-                Telefone: <a href="tel:+8888888888888">numero luan</a>
-            </address>
+        <form action="">
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome" name="nome" required> <br>
+
+            <label for="email">E-mail: </label>
+            <input type="email" id="email" name="email" required> <br>
+            <!-- id é para identificar na página, name para identificar no banco o dado-->
+            <label for="telefone">Telefone: </label>
+            <input type="tel" id="telefone" name="telefone"> <br>
+
+            <label for="assunto">Assunto: </label>
+            <select name="assunto" id="assunto"> <!--seleção de assuntos-->
+                <option value="orcamento">Orçamento</option>
+                <option value="duvida">Dúvida</option>
+                <option value="outro">Outro</option>
+            </select> <br>
+
+            <label for="mensagem">Mensagem: </label> <!--campo de adicionar mensagem-->
+            <textarea name="mensagem" id="mensagem" cols="30" rows="1.5" required></textarea> <br>
+
+            <input type="checkbox" id="inscricao" name="inscricao"> <!--checkbox-->
+            <label for="inscricao">Deseja receber minha newsletter? marque a caixa.</label> <br>
+
+            <input type="submit" value="Enviar mensagem"> <!--botao de enviar-->
+        </form>
 
         </section>
     </footer>
