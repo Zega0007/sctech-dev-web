@@ -1,0 +1,26 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+} /* atribui tudo que não tem estilo definido */
+
+p {
+    color: blue;
+}
+
+p + a { /* sempre que no html for seguido tag a de p ex: <p> <a> <p> <a>. vai ter essa config */
+    font-weight: bold;
+    color: red;
+}
+
+p ~ a { /* toda tag a que vier depois de p fica com essa config ex: <p> <a> <a>, */
+    font-weight: lighter;
+    color: green;
+}
+
+p > a { /* toda tag a dentro da identação p fica com essa config */ 
+    color: purple;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div a { /* todo a que esta dentro da div tem essa config */
+    color: coral;
+}
